@@ -1,0 +1,202 @@
+/* Estilos base. */
+html, body {
+  font-family: Arial;
+  height: 100%;
+  margin: 0;
+}
+header {
+  height: max-content;
+  width: 100%;
+  background-color: #1fa3ff;
+  border-bottom: 10px solid #0f93ff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0px;
+  padding-bottom: 20px;
+  top: 0;
+  position: sticky;
+}
+footer {
+  height: max-content;
+  width: 100%;
+  background-color: #1fa3ff;
+  border-top: 10px solid #0f93ff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: 50px;
+}
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+h6 {
+  text-align: center;
+  font-family: Arial;
+  margin-bottom: 0px;
+}
+p {
+  margin: 10px;
+  font-size: 1rem;
+  text-align: start;
+}
+p::before {
+  content: '---';
+  color: #0000;
+}
+ul {
+  font-size: 2.5rem;
+}
+button {
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+/* Classes. */
+.container-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container-body main {
+  flex: 1;
+}
+.container-footer div {
+  display: flex;
+  align-items: column;
+  justify-content: space-between;
+}
+.centralizarHorizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tituloCabecalho h1 {
+  color: white;
+  border-width: 0px;
+  margin: 10px;
+}
+.tituloCabecalho h6 {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+.btnsCabecalho button {
+  background-color: #1fa3ff;
+  border: 5px solid #0f93ff;
+  border-radius: 25px;
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  height: 100px;
+  width: 33%;
+  top: 0;
+  position: relative;
+}
+.conteudo {
+  border: 5px solid black;
+  border-radius: 25px;
+  height: fit-content;
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+  padding: 10px;
+}
+.conteudo-pro-contra {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteudo-pro, .conteudo-contra {
+  border: 5px solid black;
+  border-radius: 25px;
+  height: fit-content;
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  position: relative;
+}
+.conteudo-pro::before {
+  content: 'Prós';
+  font-size: 3.5rem;
+  margin: auto;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -120%);
+  position: absolute;
+}
+.conteudo-contra::before {
+  content: 'Contras';
+  font-size: 3.5rem;
+  margin: auto;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -120%);
+  position: absolute;
+}
+.rodape {
+  color: white;
+  padding: 0;
+}
+.grupo {
+  padding: 5px;
+  width: 25vh;
+  position: relative;
+}
+.grupo li {
+  list-style-type: none;
+}
+.grupo::before {
+  content: 'Grupo formado por: ';
+  font-size: 3rem;
+  top: 0;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.dev {
+  padding: 5px;
+  width: 25vh;
+  position: relative;
+}
+.dev li {
+  list-style-type: none;
+}
+.dev::before {
+  content: 'Desenvolvido por: ';
+  font-size: 3rem;
+  top: 0;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.imgs-ia img {
+  width: fit-content;
+  height: 40px;
+  margin-right: 10px;
+}
+.imgs-futuro img {
+  width: fit-content;
+  height: 40px;
+  margin-right: 10px;
+}
+/* Ajustes. */
+#exemplos-ia {
+  margin-top: 20px;
+}
+#p-ia-final {
+  margin-top: 20px;
+}
+#p-futuro-final {
+  margin-top: 20px;
+}
+#img-internet {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  position: relative;
+}
